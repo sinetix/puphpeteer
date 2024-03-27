@@ -22,7 +22,7 @@
     "php": "^8.0",
     "ext-json": "*",
     "composer/semver": "^3.0",
-    "zoon/rialto": "^1.5",
+    "zoon/rialto": "^dev-zoon",
     "psr/log": "^1.0 || ^2.0 || ^3.0",
     "thecodingmachine/safe": "^2.5"
   },
@@ -54,6 +54,12 @@
     "stan": "vendor/bin/phpstan analyze packages/*/src",
     "format": "vendor/bin/php-cs-fixer fix"
   },
+  "repositories": [
+    {
+        "type": "vcs",
+        "url": "https://github.com/sinetix/rialto.git"
+    }
+  ],
   "config": {
     "sort-packages": true
   }
